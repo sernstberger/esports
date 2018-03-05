@@ -7,6 +7,7 @@ import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 
 import NewsCard from "../../components/shared/NewsCard";
+import SectionHeader from "../../components/shared/SectionHeader";
 
 import styles from "./styles"
 
@@ -18,8 +19,15 @@ function Header(props) {
         <Grid item xs={12} md={10}>
           <Grid container>
             <Grid item xs={12} sm={8}>
-              <NewsCard />
-              <NewsCard />
+              <SectionHeader />
+              <Grid container>
+                <Grid item xs={12} sm={6}>
+                  <NewsCard />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <NewsCard />
+                </Grid>
+              </Grid>
               <NewsCard />
               <NewsCard />
               <NewsCard />

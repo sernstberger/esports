@@ -51,6 +51,36 @@ const themeWithPalette = createMuiTheme({
   // Build out Global overrides for this default theme.
   overrides: {
 
+    MuiButton: {
+      root: {
+        borderRadius: "50px",
+        color: "#FFF",
+      },
+      raised: {
+        backgroundColor: "#7a7283",
+        color: "#FFF",
+        fontStyle: "italic",
+        fontWeight: 700,
+        textTransform: "uppercase",
+      },
+    },
+
+    MuiChip: {
+      root: {
+        borderRadius: 0,
+        marginLeft: 5,
+        marginRight: 5,
+        transform: "skew(-15deg)",
+      },
+      label: {
+        // fontSize: "1.5rem",
+        fontStyle: "italic",
+        fontWeight: 700,
+        textTransform: "uppercase",
+        transform: "skew(15deg)",
+      },
+    },
+
     MuiPaper: {
       root: {
         backgroundColor: "#362b45",
@@ -68,7 +98,8 @@ function createDefaultTheme(initialTheme) {
   const typography = createTypography(initialTheme.palette, {
     // System font
     fontFamily:
-      '"Lato","-apple-system,system-ui,BlinkMacSystemFont","Helvetica Neue",Arial,sans-serif',
+      // '"Open Sans","-apple-system,system-ui,BlinkMacSystemFont","Helvetica Neue",Arial,sans-serif',
+      '"Roboto Condensed","-apple-system,system-ui,BlinkMacSystemFont","Helvetica Neue",Arial,sans-serif',
   });
 
   return {
@@ -89,7 +120,7 @@ function createDefaultTheme(initialTheme) {
       title: {
         ...typography.title,
         color: "#FFF",
-        fontFamily: "Roboto",
+        // fontFamily: "Roboto",
         fontSize: "1.5rem",
         fontStyle: "italic",
         fontWeight: 700,
@@ -98,7 +129,7 @@ function createDefaultTheme(initialTheme) {
       subheading: {
         ...typography.subheading,
         color: "#FFF",
-        fontFamily: "Roboto",
+        // fontFamily: "Roboto",
         fontSize: "1.25rem",
         fontStyle: "italic",
         fontWeight: 700,

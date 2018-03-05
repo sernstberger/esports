@@ -6,7 +6,7 @@ const variables = {
   primaryColor200: "#9fbfc6",
   primaryColor300: "#79a5af",
   primaryColor400: "#5c919e",
-  primaryColor: "#3f7e8d",
+  primaryColor: "#1bd75e",
   primaryColor600: "#397685",
   primaryColor700: "#316b7a",
   primaryColor800: "#296170",

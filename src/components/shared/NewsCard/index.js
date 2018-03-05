@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-// import Button from 'material-ui/Button';
+import Chip from 'material-ui/Chip';
 import Typography from 'material-ui/Typography';
 
 import styles from "./styles"
@@ -14,11 +14,12 @@ function NewsCard(props) {
       <Card className={classes.card}>
         <div className={classes.cardMedia}
           // className={classes.media}
-          style={{backgroundImage: "url(http://unsplash.it/450/450)"}}
+          style={{backgroundImage: "url(http://unsplash.it/453/453)"}}
           // alt="Contemplative Reptile"
         >
-          <div>
-            tags
+          <div className={classes.metaInfo}>
+            <Chip label="tag" />
+            <Chip label="tag" />
             <Typography variant="headline" component="h2">
               Destroy WILL STREAM THE MERCENARIES MISSION
             </Typography>

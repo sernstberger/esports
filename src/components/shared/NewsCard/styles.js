@@ -17,9 +17,11 @@ const styles = {
     // },
   },
   cardMedia: {
+    alignItems: "flex-end",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
+    display: "flex",
     height: 450,
     position: "relative",
     zIndex: 1,
@@ -35,6 +37,11 @@ const styles = {
       zIndex: 2,
     },
   },
+
+  metaInfo: {
+    padding: 20,
+    zIndex: 3,
+  }
 };
 
 export default styles;
