@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: sans-serif; */
+  background-color: #251E30;
+  color: #FFF;
+}
+
 /* .App {
   text-align: center;
 }

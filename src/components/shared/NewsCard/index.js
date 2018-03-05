@@ -12,14 +12,22 @@ function NewsCard(props) {
   return (
     <div>
       <Card className={classes.card}>
+        <div className={classes.cardMedia}
+          // className={classes.media}
+          style={{backgroundImage: "url(http://unsplash.it/450/450)"}}
+          // alt="Contemplative Reptile"
+        >
+          <div>
+            tags
+            <Typography variant="headline" component="h2">
+              Destroy WILL STREAM THE MERCENARIES MISSION
+            </Typography>
+            <Typography component="p">
+              Date
+            </Typography>
+          </div>
+        </div>
         <CardContent>
-          tags
-          <Typography variant="headline" component="h2">
-            DESTROY WILL STREAM THE MERCENARIES MISSION
-          </Typography>
-          <Typography component="p">
-            Date
-          </Typography>
           number of views 34543
           likes 34534
           comments 34534

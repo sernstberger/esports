@@ -1,10 +1,17 @@
-const styles = {
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 200,
-  },
-};
+import {StyleRules, Theme} from "material-ui/styles";
+// import variables from "../../assets/styles/variables";
 
-export default styles;
+const styleSheet = (Theme) => ({
+  foooooo: {
+    // display: "inline-block",
+    background: "#3F3351",
+    margin: "-15px 0",
+    padding: "20px 30px",
+  },
+
+  bang: {
+    // display: "inline-block",
+  }
+});
+
+export default styleSheet;

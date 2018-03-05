@@ -15,9 +15,9 @@ function Header(props) {
   return (
     <div>
       <Grid container justify="center">
-        <Grid item sm={10}>
+        <Grid item xs={12} md={10}>
           <Grid container>
-            <Grid item sm={8}>
+            <Grid item xs={12} sm={8}>
               <NewsCard />
               <NewsCard />
               <NewsCard />
@@ -26,7 +26,7 @@ function Header(props) {
               <NewsCard />
             </Grid>
 
-            <Grid item sm={4}>
+            <Grid item xs={12} sm={4}>
               <NewsCard />
               <NewsCard />
             </Grid>
