@@ -4,49 +4,23 @@ import createPalette from "material-ui/styles/createPalette";
 import createTypography from "material-ui/styles/createTypography";
 import variables from "./variables";
 
-// interface IStyles {
-//   classes: any;
-// }
-
-// Create Initial Theme with Our Primary and Accent Colors
 const themeWithPalette = createMuiTheme({
-  palette: createPalette({
-    type: "light",
+  palette: {
     primary: {
-      50: variables.primaryColor50,
-      100: variables.primaryColor100,
-      200: variables.primaryColor200,
-      300: variables.primaryColor300,
-      400: variables.primaryColor400,
-      500: variables.primaryColor,
-      600: variables.primaryColor600,
-      700: variables.primaryColor700,
-      800: variables.primaryColor800,
-      900: variables.primaryColor900,
-      A100: variables.primaryColorA100,
-      A200: variables.primaryColorA200,
-      A400: variables.primaryColorA400,
-      A700: variables.primaryColorA700,
-      // contrastDefaultColor: "light",
+      light: "#00ff5b",
+      main: "#1BD75D",
+      dark: "#164934",
     },
     secondary: {
-      50: variables.secondaryColor,
-      100: variables.secondaryColor,
-      200: variables.secondaryColor,
-      300: variables.secondaryColor,
-      400: variables.secondaryColor,
-      500: variables.secondaryColor,
-      600: variables.secondaryColor,
-      700: variables.secondaryColor,
-      800: variables.secondaryColor,
-      900: variables.secondaryColor,
-      A100: variables.secondaryColor,
-      A200: variables.secondaryColor,
-      A400: variables.secondaryColor,
-      A700: variables.secondaryColor,
-      // contrastDefaultColor: "light",
-    },
-  }),
+      light: "#8040F5",
+      main: "#6a3bc0",
+      dark1: "#4b3b60",
+      dark2: "#403351",
+      dark3: "#392d49",
+      dark4: "#362b45",
+      dark5: "#2B2135",
+    }
+  },
 
   // Build out Global overrides for this default theme.
   overrides: {
@@ -65,11 +39,22 @@ const themeWithPalette = createMuiTheme({
       },
     },
 
+    MuiCardContent: {
+      root: {
+        "&:last-child": {
+          paddingBottom: 16,
+        },
+      },
+    },
+
     MuiChip: {
       root: {
         borderRadius: 0,
+        height: "auto",
         marginLeft: 5,
         marginRight: 5,
+        paddingBottom: 3,
+        paddingTop: 3,
         transform: "skew(-15deg)",
       },
       label: {
@@ -88,6 +73,19 @@ const themeWithPalette = createMuiTheme({
         borderRadius: "4px !important",
       },
     },
+
+    MuiTab: {
+      root: {
+        fontStyle: "italic",
+        fontWeight: 700,
+        textTransform: "uppercase",
+      },
+
+      label: {
+        color: "#fff",
+        fontSize: "14px !important",
+      },
+    }
 
 
   },
@@ -111,6 +109,10 @@ function createDefaultTheme(initialTheme) {
         ...typography.display1,
         color: "#FFF",
         fontSize: "2rem",
+        fontStyle: "italic",
+        fontWeight: 700,
+        lineHeight: 1,
+        textTransform: "uppercase",
       },
       headline: {
         ...typography.headline,

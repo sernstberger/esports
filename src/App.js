@@ -12,19 +12,21 @@ import AlertBanner from "./components/shared/AlertBanner";
 import { MuiThemeProvider } from 'material-ui/styles';
 import defaultTheme from "./assets/styles/theme";
 
+import { Route, Link } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <MuiThemeProvider theme={defaultTheme}>
-        <Header />
+          <Header />
+          <AlertBanner />
 
-        <AlertBanner />
+          <Route exact path="/" component={ Home } />
+          <Route path="/foo" component={ AlertBanner } />
 
-        <Home />
-
-        <Footer />
+          <Footer />
         </MuiThemeProvider>
       </div>
     );

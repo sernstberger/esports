@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
+import Card, { CardActions, CardContent } from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import Typography from 'material-ui/Typography';
 
@@ -20,7 +20,7 @@ function NewsCard(props) {
           <div className={classes.metaInfo}>
             <Chip label="tag" />
             <Chip label="tag" />
-            <Typography variant="headline" component="h2">
+            <Typography variant="display1" component="h2">
               Destroy WILL STREAM THE MERCENARIES MISSION
             </Typography>
             <Typography component="p">

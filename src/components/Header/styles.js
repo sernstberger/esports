@@ -1,10 +1,65 @@
-const styles = {
-  // card: {
-  //   maxWidth: 345,
-  // },
-  // media: {
-  //   height: 200,
-  // },
-};
+import {StyleRules, Theme} from "material-ui/styles";
+// import variables from "../../assets/styles/variables";
 
-export default styles;
+const styleSheet = (Theme) => ({
+  root: {
+    background: Theme.palette.secondary.dark1,
+    border: "none",
+  //   flexGrow: 1,
+  //   // width: '100%',
+  //   // marginTop: Theme.spacing.unit * 3,
+  //   // backgroundColor: Theme.palette.background.paper,
+  },
+  secondaryHeader: {
+    backgroundColor: Theme.palette.secondary.dark2,
+    color: Theme.palette.primary.main,
+    height: 50,
+  },
+
+  mainHeaderWrapper: {
+    marginTop: 0,
+  },
+
+  mainHeader: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+
+  textFieldRoot: {
+    padding: 0,
+    'label + &': {
+      // marginTop: theme.spacing.unit * 3,
+    },
+  },
+  textFieldInput: {
+    borderRadius: 4,
+    backgroundColor: Theme.palette.secondary.dark4,
+    // border: '1px solid #ced4da',
+    borderRadius: 20,
+    fontSize: 16,
+    padding: '10px 12px',
+    width: 'calc(100% - 24px)',
+    transition: "250ms all",
+
+    '&::-webkit-input-placeholder': {
+      color: "#D1CFD4",
+    },
+    '&:-moz-placeholder': {
+      color: "#D1CFD4",
+    },
+
+    '&:focus': {
+      backgroundColor: "#fff",
+      borderColor: '#80bdff',
+      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.25)',
+    },
+  },
+  logo: {
+    marginTop: -20,
+  },
+  textFieldFormLabel: {
+    fontSize: 18,
+  },
+});
+
+export default styleSheet;
