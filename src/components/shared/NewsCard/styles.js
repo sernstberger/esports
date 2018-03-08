@@ -24,6 +24,7 @@ const styles = {
     display: "flex",
     height: 450,
     position: "relative",
+    textDecoration: "none",
     zIndex: 1,
 
     '&:before': {

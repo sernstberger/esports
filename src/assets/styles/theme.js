@@ -27,15 +27,16 @@ const themeWithPalette = createMuiTheme({
 
     MuiButton: {
       root: {
-        borderRadius: "50px",
-        color: "#FFF",
-      },
-      raised: {
-        backgroundColor: "#7a7283",
+        // borderRadius: "50px",
         color: "#FFF",
         fontStyle: "italic",
         fontWeight: 700,
         textTransform: "uppercase",
+      },
+      raised: {
+        backgroundColor: "#7a7283",
+        borderRadius: "50px",
+        color: "#FFF",
       },
     },
 
@@ -78,12 +79,22 @@ const themeWithPalette = createMuiTheme({
       root: {
         fontStyle: "italic",
         fontWeight: 700,
+        minWidth: "unset !important",
         textTransform: "uppercase",
       },
 
       label: {
         color: "#fff",
-        fontSize: "14px !important",
+      },
+
+      rootPrimarySelected: {
+        // color: Theme.palette.primary.main,
+        color: "red",
+
+        // '& label': {
+        //   color: "#fff",
+        //   fontSize: "14px !important",
+        // },
       },
     }
 
@@ -133,7 +144,7 @@ function createDefaultTheme(initialTheme) {
         color: "#FFF",
         // fontFamily: "Roboto",
         fontSize: "1.25rem",
-        fontStyle: "italic",
+        // fontStyle: "italic",
         fontWeight: 700,
         textTransform: "uppercase",
       },

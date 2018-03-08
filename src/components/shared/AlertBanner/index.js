@@ -12,29 +12,25 @@ function AlertBanner(props) {
   const { classes } = props;
   return (
     <div>
-      <Grid container justify="center" spacing={24}>
-        <Grid item xs={12} md={10}>
-          <Card>
-            <CardContent className={classes.card}>
+      <Card>
+        <CardContent className={classes.card}>
 
-                <div className={classes.title}>
-                  <Typography variant="title" component="h2" className={classes.titleText}>
-                    Breaking News
-                  </Typography>
-                </div>
-              
-                {/* <Chip label="XENOWATCH" /> */}
-                <div>
-                  <Typography variant="subheading" component="h4">
-                    SHADOW’S ABILITY WILL RECEIVE A NERF ON MAY 6TH
-                  </Typography>
-                  <Typography variant="caption" component="h5">Due to multiple player complaints...</Typography>
-                </div>
+            <div className={classes.title}>
+              <Typography variant="title" component="h2" className={classes.titleText}>
+                Breaking News
+              </Typography>
+            </div>
+          
+            {/* <Chip label="XENOWATCH" /> */}
+            <div>
+              <Typography variant="subheading" component="h4">
+                SHADOW’S ABILITY WILL RECEIVE A NERF ON MAY 6TH
+              </Typography>
+              <Typography variant="caption" component="h5">Due to multiple player complaints...</Typography>
+            </div>
 
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
+        </CardContent>
+      </Card>
     </div>
   );
 }

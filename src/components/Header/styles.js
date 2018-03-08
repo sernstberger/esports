@@ -14,15 +14,36 @@ const styleSheet = (Theme) => ({
     backgroundColor: Theme.palette.secondary.dark2,
     color: Theme.palette.primary.main,
     height: 50,
+    marginTop: 0,
+
+    '& a': {
+      color: "#FFF",
+      marginRight: 20,
+      padding: 5,
+
+      '&:hover': {
+        color: Theme.palette.primary.main,
+      },
+    },
+  },
+
+  secondaryHeaderContainer: {
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "space-between",
   },
 
   mainHeaderWrapper: {
-    marginTop: 0,
+    height: 70,
+    // marginTop: 0,
+    margin: 0,
   },
 
   mainHeader: {
     display: "flex",
+    // height: 70,
     justifyContent: "space-between",
+    // padding: 20,
   },
 
   textFieldRoot: {

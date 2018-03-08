@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent } from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
@@ -12,7 +14,7 @@ function NewsCard(props) {
   return (
     <div>
       <Card className={classes.card}>
-        <div className={classes.cardMedia}
+        <Link to="/teams" className={classes.cardMedia}
           // className={classes.media}
           style={{backgroundImage: "url(http://unsplash.it/453/453)"}}
           // alt="Contemplative Reptile"
@@ -27,7 +29,7 @@ function NewsCard(props) {
               Date
             </Typography>
           </div>
-        </div>
+        </Link>
         <CardContent>
           number of views 34543
           likes 34534

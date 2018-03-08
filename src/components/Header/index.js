@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
+import Button from 'material-ui/Button';
 import AppBar from 'material-ui/AppBar';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import Toolbar from 'material-ui/Toolbar';
@@ -48,33 +51,51 @@ class Header extends React.Component {
       <div>
         <AppBar position="static" className={classes.root}>
           <Grid container justify="center" className={classes.secondaryHeader}>
-            <Grid item xs={12} md={10}>
+            <Grid item xs={12} md={10} className={classes.secondaryHeaderContainer}>
               {/* <FontAwesomeIcon icon={faTwitch} /> */}
-              <FontAwesomeIcon icon={["fab","facebook"]}/>
-              <FontAwesomeIcon icon={["fab","twitter"]}/>
-              <FontAwesomeIcon icon={["fab","twitch"]}/>
-              <FontAwesomeIcon icon={["fab","youtube"]}/>
-              <FontAwesomeIcon icon={["fab","instagram"]}/>
+              <div>
+                <Link to="#">
+                  <FontAwesomeIcon icon={["fab","facebook"]}/>
+                </Link>
+                <Link to="#">
+                  <FontAwesomeIcon icon={["fab","twitter"]}/>
+                </Link>
+                <Link to="#">
+                  <FontAwesomeIcon icon={["fab","twitch"]}/>
+                </Link>
+                <Link to="#">
+                  <FontAwesomeIcon icon={["fab","youtube"]}/>
+                </Link>
+                <Link to="#">
+                  <FontAwesomeIcon icon={["fab","instagram"]}/>
+                </Link>
+              </div>
 
-              Login
+              <Link to="#">Login</Link>
             </Grid>
           </Grid>
 
           <Grid container justify="center" className={classes.mainHeaderWrapper}>
             <Grid item xs={12} md={10} className={classes.mainHeader}>
-              <Tabs
+              <div>
+                {/* <Button className={classes.button}>Default</Button> */}
+                <Button component={Link} to="/">Home</Button>
+                <Button component={Link} to="/">Features</Button>
+                <Button component={Link} to="/teams">Teams</Button>
+              </div>
+              {/* <Tabs
                 value={value}
                 onChange={this.handleChange}
                 indicatorColor="primary"
                 textColor="primary"
-                scrollable
-                scrollButtons="auto"
+                // scrollable
+                // scrollButtons="auto"
               >
                 <Tab label="Home" />
                 <Tab label="Features" />
                 <Tab label="Teams" />
-                {/* <Tab label="Merchandise" /> */}
-              </Tabs>
+                {/* <Tab label="Merchandise" />
+              </Tabs> */}
               <img src={require(`../../assets/images/overwatch-league-logo.png`)} className={classes.logo} alt="Esports" width="164" />
               
               <TextField

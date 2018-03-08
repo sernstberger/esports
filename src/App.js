@@ -6,13 +6,12 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import Home from "./pages/Home";
-
-import AlertBanner from "./components/shared/AlertBanner";
+import Teams from "./pages/Teams";
 
 import { MuiThemeProvider } from 'material-ui/styles';
 import defaultTheme from "./assets/styles/theme";
 
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -21,10 +20,9 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider theme={defaultTheme}>
           <Header />
-          <AlertBanner />
 
           <Route exact path="/" component={ Home } />
-          <Route path="/foo" component={ AlertBanner } />
+          <Route path="/teams" component={ Teams } />
 
           <Footer />
         </MuiThemeProvider>
