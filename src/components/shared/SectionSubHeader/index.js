@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
-import Button from "material-ui/Button";
-import Card, { CardActions, CardContent } from 'material-ui/Card';
-import Grid from "material-ui/Grid";
+// import Button from "material-ui/Button";
+// import Card, { CardActions, CardContent } from 'material-ui/Card';
+import { CardContent } from 'material-ui/Card';
+// import Grid from "material-ui/Grid";
 import Typography from 'material-ui/Typography';
 
 import styles from "./styles"

@@ -7,6 +7,7 @@ import Header from "./components/Header";
 
 import Home from "./pages/Home";
 import Teams from "./pages/Teams";
+import Post from "./pages/Post";
 
 import { MuiThemeProvider } from 'material-ui/styles';
 import defaultTheme from "./assets/styles/theme";
@@ -23,6 +24,7 @@ class App extends Component {
 
           <Route exact path="/" component={ Home } />
           <Route path="/teams" component={ Teams } />
+          <Route path="/post" component={ Post } />
 
           <Footer />
         </MuiThemeProvider>

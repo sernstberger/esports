@@ -7,10 +7,9 @@ import Grid from 'material-ui/Grid';
 
 import MatchStatistics from "../../components/shared/MatchStatistics";
 import MatchVersus from "../../components/shared/MatchVersus";
-import NewsCard from "../../components/shared/NewsCard";
 import PageTitle from "../../components/shared/PageTitle";
 import SectionHeader from "../../components/shared/SectionHeader";
-import VideoEmbed from "../../components/shared/VideoEmbed";
+import Player from "../../components/shared/Player";
 
 import styles from "./styles"
 
@@ -138,7 +137,7 @@ class Teams extends React.Component {
                   link="#"
                 />
                 <Card>
-                  Date
+                  <Player />
                 </Card>
                 <Card>
                   Pro League

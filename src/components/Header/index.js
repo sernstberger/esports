@@ -3,12 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import { withStyles } from 'material-ui/styles';
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
 import AppBar from 'material-ui/AppBar';
-import Tabs, { Tab } from 'material-ui/Tabs';
-import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import TextField from 'material-ui/TextField';
 
@@ -50,7 +47,7 @@ class Header extends React.Component {
     return (
       <div>
         <AppBar position="static" className={classes.root}>
-          <Grid container justify="center" className={classes.secondaryHeader}>
+          <Grid container justify="center" spacing={0} className={classes.secondaryHeader}>
             <Grid item xs={12} md={10} className={classes.secondaryHeaderContainer}>
               {/* <FontAwesomeIcon icon={faTwitch} /> */}
               <div>
@@ -75,7 +72,7 @@ class Header extends React.Component {
             </Grid>
           </Grid>
 
-          <Grid container justify="center" className={classes.mainHeaderWrapper}>
+          <Grid container justify="center" spacing={0} className={classes.mainHeaderWrapper}>
             <Grid item xs={12} md={10} className={classes.mainHeader}>
               <div>
                 {/* <Button className={classes.button}>Default</Button> */}

@@ -1,4 +1,4 @@
-// import {StyleRules, Theme} from "material-ui/styles";
+// import {Theme} from "material-ui/styles";
 import variables from "../../../assets/styles/variables";
 
 const styleSheet = (Theme) => ({

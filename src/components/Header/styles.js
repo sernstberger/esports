@@ -1,4 +1,4 @@
-import {StyleRules, Theme} from "material-ui/styles";
+// import {Theme} from "material-ui/styles";
 // import variables from "../../assets/styles/variables";
 
 const styleSheet = (Theme) => ({
@@ -53,7 +53,7 @@ const styleSheet = (Theme) => ({
     },
   },
   textFieldInput: {
-    borderRadius: 4,
+    // borderRadius: 4,
     backgroundColor: Theme.palette.secondary.dark4,
     // border: '1px solid #ced4da',
     borderRadius: 20,

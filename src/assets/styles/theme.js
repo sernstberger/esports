@@ -1,8 +1,8 @@
-import { grey } from "material-ui/colors";
+// import { grey } from "material-ui/colors";
 import createMuiTheme from "material-ui/styles/createMuiTheme";
-import createPalette from "material-ui/styles/createPalette";
+// import createPalette from "material-ui/styles/createPalette";
 import createTypography from "material-ui/styles/createTypography";
-import variables from "./variables";
+// import variables from "./variables";
 
 const themeWithPalette = createMuiTheme({
   palette: {
@@ -12,6 +12,7 @@ const themeWithPalette = createMuiTheme({
       dark: "#164934",
     },
     secondary: {
+      lightest: "#4b3b60",
       light: "#8040F5",
       main: "#6a3bc0",
       dark1: "#4b3b60",
@@ -70,7 +71,7 @@ const themeWithPalette = createMuiTheme({
     MuiPaper: {
       root: {
         backgroundColor: "#362b45",
-        border: "1px solid #4b3b60",
+        border: `1px solid #4b3b60`,
         borderRadius: "4px !important",
       },
     },

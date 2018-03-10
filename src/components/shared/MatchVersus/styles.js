@@ -1,5 +1,4 @@
-import {StyleRules, Theme} from "material-ui/styles";
-import { relative } from "upath";
+// import {Theme} from "material-ui/styles";
 // import variables from "../../assets/styles/variables";
 
 const styleSheet = (Theme) => ({

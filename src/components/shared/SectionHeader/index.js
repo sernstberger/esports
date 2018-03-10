@@ -18,7 +18,7 @@ function SectionHeader(props) {
             <Typography variant="title" component="h2">
               {title}
             </Typography>
-            <Button variant="raised" size="small">{buttonTitle}</Button>
+            { buttonTitle && <Button variant="raised" size="small">{buttonTitle}</Button> }
           </CardContent>
         </Card>
       </Grid>
@@ -29,8 +29,8 @@ function SectionHeader(props) {
 SectionHeader.propTypes = {
   classes: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
-  buttonTitle: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  buttonTitle: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default withStyles(styles)(SectionHeader);

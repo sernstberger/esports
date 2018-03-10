@@ -39,10 +39,24 @@ const styles = {
     },
   },
 
+  metaItemContainer: {
+    display: "flex",
+  },
+
+  MetaItem: {
+    marginLeft: 5,
+  },
+
   metaInfo: {
     padding: 20,
     zIndex: 3,
-  }
+  },
+
+  moreMetaInfo: {
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "space-between",
+  },
 };
 
 export default styles;

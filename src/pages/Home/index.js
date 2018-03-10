@@ -10,15 +10,15 @@ import MatchVersus from "../../components/shared/MatchVersus";
 import NewsCard from "../../components/shared/NewsCard";
 import SectionHeader from "../../components/shared/SectionHeader";
 import SectionSubHeader from "../../components/shared/SectionSubHeader";
-import VideoEmbed from "../../components/shared/VideoEmbed";
+// import VideoEmbed from "../../components/shared/VideoEmbed";
 
 import styles from "./styles"
 
 function Header(props) {
-  const { classes } = props;
+  // const { classes } = props;
   return (
-    <div>
-      <Grid container justify="center">
+    <div style={{ padding: 10 }}>
+      <Grid container justify="center" spacing={0}>
         <Grid item xs={12} md={10}>
           <Grid container>
             <Grid item xs={12}>

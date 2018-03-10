@@ -1,4 +1,4 @@
-import {StyleRules, Theme} from "material-ui/styles";
+import {Theme} from "material-ui/styles";
 // import variables from "../../assets/styles/variables";
 
 const styleSheet = (Theme) => ({
@@ -11,6 +11,8 @@ const styleSheet = (Theme) => ({
   title: {
     // display: "inline-block",
     background: "#3F3351",
+    alignItems: "center",
+    display: "flex",
     margin: "-20px 35px -20px -25px",
     padding: "20px 30px",
     position: "relative",
